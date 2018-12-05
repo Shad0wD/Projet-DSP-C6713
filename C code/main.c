@@ -1,9 +1,3 @@
-/*
- * Based on Ex24a.c
- *
- *  Created on: 2017-12-01
- *      Author: mgabrea
- */
 
 #include<stdio.h>
 #include<stdlib.h>
@@ -180,7 +174,7 @@ float rms(const float x[256])
 
   return (float)sqrt(y / 256.0F);
 }
-
+/*
 void cast_log(float *x)
 {
   *x = (float)log(*x);
@@ -197,7 +191,7 @@ void fft(float *x, float *w, short n){
 	int size = gen_twiddle(w, N);
 	bit_rev(w, N>>1);
 	DSPF_sp_cfftr2_dit(x, w, N);
-}
+}*/
 
 int main(void)
 {
@@ -420,7 +414,7 @@ for(i=1; i<nb_blocs; i++)
 	//rewind(fp);
 
 	////////////////////
-	//Script Débruitage
+	//Script DÃ©bruitage
 	////////////////////
 
 	//Calcul de la valeur du signal pour le SNR
